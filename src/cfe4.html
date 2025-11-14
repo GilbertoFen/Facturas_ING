@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFE - Sucursales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .bg-cfe-green { background-color: #6a966a; }
+        .text-cfe-green { color: #1a6032; }
+        .btn-location {
+            background-color: #e0e0e0;
+            color: #4a4a4a;
+            border: none;
+            font-size: 1.25rem;
+            padding: 1rem 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container-fluid py-3 border-bottom">
+        <div class="d-flex justify-content-between align-items-center container">
+            <div class="h2 mb-0 text-cfe-green">
+                <span class="fw-bold">CFE</span>
+            </div>
+            <nav class="d-flex align-items-center">
+                <a href="#" class="text-decoration-none text-dark me-3">Sucursales</a>
+                <a href="#" class="text-decoration-none text-dark me-3">Ayuda</a>
+                <a href="#" class="btn btn-dark btn-sm">Ingresar</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid bg-cfe-green py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span class="text-white fw-bold">Preguntas Frecuentes</span>
+            <nav>
+                <a href="#" class="text-white text-decoration-none me-3">Facebook</a>
+                <a href="#" class="text-white text-decoration-none me-3">YouTube</a>
+                <a href="#" class="text-white text-decoration-none me-3">Instagram</a>
+                <a href="#" class="text-white text-decoration-none">TikTok</a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="container py-5">
+        <h1 class="mb-5 text-dark fw-bold">Conoce nuestras sucursales</h1>
+        
+        <h2 class="mb-4 text-dark fw-bold">Buscar sucursales por Estado</h2>
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs" id="sucursalesTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab-mexico" data-bs-toggle="tab" data-bs-target="#content-mexico" type="button" role="tab" aria-controls="content-mexico" aria-selected="true">Estado de México</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-jalisco" data-bs-toggle="tab" data-bs-target="#content-jalisco" type="button" role="tab" aria-controls="content-jalisco" aria-selected="false">Jalisco</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-nl" data-bs-toggle="tab" data-bs-target="#content-nl" type="button" role="tab" aria-controls="content-nl" aria-selected="false">Nuevo León</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-otros" data-bs-toggle="tab" data-bs-target="#content-otros" type="button" role="tab" aria-controls="content-otros" aria-selected="false">Otros Estados</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content border border-top-0 p-4" id="sucursalesTabsContent">
+                    
+                    <div class="tab-pane fade show active" id="content-mexico" role="tabpanel" aria-labelledby="tab-mexico">
+                        <h4>Sucursales en Estado de México</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>CFE Sucursal Toluca:</strong> Calle Ignacio Allende 110, Col. Centro.<br>
+                                Horario: Lunes a Viernes de 8:00 a 15:30.
+                            </li>
+                            <li class="list-group-item">
+                                <strong>CFE Sucursal Tlalnepantla:</strong> Av. Adolfo López Mateos S/N, Col. San Javier.<br>
+                                Horario: Lunes a Viernes de 8:00 a 17:00.
+                            </li>
+                            <li class="list-group-item">
+                                <strong>CFE Sucursal Ecatepec:</strong> Av. Vía Morelos 305, Col. Santa María Tulpetlac.<br>
+                                Horario: Lunes a Viernes de 8:00 a 15:30.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="content-jalisco" role="tabpanel" aria-labelledby="tab-jalisco">
+                        <h4>Sucursales en Jalisco</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>CFE Sucursal Guadalajara Centro:</strong> Calle Pedro Moreno 1014, Col. Centro.<br>
+                                Horario: Lunes a Viernes de 8:00 a 15:00.
+                            </li>
+                            <li class="list-group-item">
+                                <strong>CFE Sucursal Zapopan:</strong> Av. Aurelio Ortega 451, Col. Seattle.<br>
+                                Horario: Lunes a Viernes de 8:00 a 16:30.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="content-nl" role="tabpanel" aria-labelledby="tab-nl">
+                        <h4>Sucursales en Nuevo León</h4>
+                        <p>Avenida Fundidora #100, Col. Obrera, Monterrey. Horario: 8:00 a 17:00.</p>
+                        <p class="text-muted">*(Favor de ingresar los datos reales de Nuevo León aquí)*</p>
+                    </div>
+
+                    <div class="tab-pane fade" id="content-otros" role="tabpanel" aria-labelledby="tab-otros">
+                        <p>Para otros estados, por favor use el buscador de ubicación en la parte superior, o llame a la línea de atención telefónica.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <hr class="my-5">
+
+        <h2 class="mb-4 text-dark fw-bold">Coloca tu ubicación y verifica las sucursales de tu zona</h2>
+        
+        <div class="text-center mb-5">
+            <button class="btn btn-location rounded-0">
+                Ingrese su ubicación
+            </button>
+        </div>
+
+        <div class="mb-5 mx-auto w-100">
+            <h3 class="h5 mb-3 fw-bold">Mapa de sucursales cercanas:</h3>
+            <div class="ratio ratio-4x3 rounded shadow-sm">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15049.231206177573!2d-99.136209!3d19.432608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8800155700d%3A0x6d95ccb6e5114170!2sCiudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container-fluid bg-cfe-green py-3 mt-5">
+        <div class="container text-center text-white">
+            <p class="mb-0">Derechos Reservados © Términos y Condiciones</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
