@@ -1,0 +1,86 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page-title {
+    letter-spacing: 0.02em;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #19875411, #0d6efd11);
+}
+
+.login-card {
+    max-width: 380px;
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+.card-recibo {
+    border-radius: 0.75rem;
+}
+
+.image-slot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #f8f9fa;
+}
+
+.image-slot-logo {
+    width: 40px;
+    height: 40px;
+    font-size: 0.6rem;
+}
+
+.image-slot-logo-sm {
+    width: 32px;
+    height: 32px;
+    font-size: 0.6rem;
+}
+
+.image-slot-barcode {
+    width: 100%;
+    height: 60px;
+}
+
+.image-slot-qr {
+    width: 70px;
+    height: 70px;
+}
+
+.image-slot-medidor {
+    width: 100%;
+    max-width: 260px;
+    height: 150px;
+}
+
+.preview-total-box {
+    border-radius: 0.5rem;
+    border: 1px solid rgba(25, 135, 84, 0.2);
+    background: linear-gradient(
+        135deg,
+        rgba(25, 135, 84, 0.05),
+        rgba(25, 135, 84, 0.02)
+    );
+    padding: 0.75rem 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .card-recibo {
+        margin-top: 1rem;
+    }
+
+    .navbar-brand span {
+        font-size: 0.9rem;
+    }
+}
