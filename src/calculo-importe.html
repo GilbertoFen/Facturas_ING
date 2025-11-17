@@ -14,11 +14,14 @@
     <header class="navbar navbar-expand-lg navbar-dark bg-success mb-4 shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <div class="image-slot image-slot-logo">LOGO</div>
+                <div class="image-slot image-slot-logo">
+                    <img src="../img/cfe-logo.png" alt="Logo CFE" class="img-fluid qr-img">
+
+                </div>
                 <span class="fw-bold">Sistema de Facturación</span>
             </a>
             <span class="navbar-text text-white small">
-                 Bienvenido: Lecturista
+                Bienvenido: Administrativo
             </span>
         </div>
     </header>
@@ -28,6 +31,31 @@
             Cálculo de importe del periodo
         </h1>
         <div class="row g-4">
+            <section class="card shadow-sm mb-4">
+                <div class="card-header bg-white">
+                    <h2 class="h6 mb-0">Buscar servicio Para calcular Importe</h2>
+                </div>
+                <div class="card-body">
+                    <form class="row gy-3 align-items-end">
+                        <div class="col-md-6">
+                            <label class="form-label small fw-semibold" for="numServicio">
+                                Número de servicio
+                            </label>
+                            <input type="text" class="form-control form-control-sm" id="numServicio"
+                                placeholder="Ej: 1234 5678 9012">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-success btn-sm w-100">
+                                Buscar
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="alert alert-info mt-3 mb-0 py-2 small">
+                        Servicio encontrado: <strong>1234 5678 901</strong>, 53720 Col. Centro.
+                    </div>
+                </div>
+            </section>
             <div class="col-12 col-lg-7">
 
                 <section class="card shadow-sm mb-4">
